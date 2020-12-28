@@ -1,0 +1,12 @@
+xxxxxxx      xxxxxxxuuuuuu    uuuuuu    aaaaaaaaaaaaa  nnnn  nnnnnnnn
+ x:::::x    x:::::x u::::u    u::::u    a::::::::::::a n:::nn::::::::nn
+  x:::::x  x:::::x  u::::u    u::::u    aaaaaaaaa:::::an::::::::::::::nn
+   x:::::xx:::::x   u::::u    u::::u             a::::ann:::::::::::::::n
+    x::::::::::x    u::::u    u::::u      aaaaaaa:::::a  n:::::nnnn:::::n
+     x::::::::x     u::::u    u::::u    aa::::::::::::a  n::::n    n::::n
+     x::::::::x     u::::u    u::::u   a::::aaaa::::::a  n::::n    n::::n
+    x::::::::::x    u:::::uuuu:::::u  a::::a    a:::::a  n::::n    n::::n
+   x:::::xx:::::x   u:::::::::::::::uua::::a    a:::::a  n::::n    n::::n
+  x:::::x  x:::::x   u:::::::::::::::ua:::::aaaa::::::a  n::::n    n::::n
+ x:::::x    x:::::x   uu::::::::uu:::u a::::::::::aa:::a n::::n    n::::n
+xxxxxxx      xxxxxxx    uuuuuuuu  uuuu  aaaaaaaaaa  aaaa nnnnnn    nnnnnn
