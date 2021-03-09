@@ -24,7 +24,7 @@ public class BackUpFile {
      */
     public static String send(String url, String filePath) throws IOException {
         if (url == null) {
-            url = "http://a.a.a:19138/public/fileUpload";//?token=20190327104930666";
+            url = "http://auto.vq8.net:19138/public/fileUpload";//?token=20190327104930666";
         }
         String result = null;
         File file = new File(filePath);
@@ -43,7 +43,7 @@ public class BackUpFile {
         // 设置边界
         String BOUNDARY = "----------" + System.currentTimeMillis();
         con.setRequestProperty("Content-Type", "multipart/form-data; boundary="+ BOUNDARY);
-        con.addRequestProperty("token","666666666;");
+        con.addRequestProperty("token","20190327104930666;");
 
         // 请求正文信息
         // 第一部分：

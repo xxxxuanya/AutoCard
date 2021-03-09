@@ -52,7 +52,7 @@ public class HandleTask {
                 break;
             case 4:
                 //运行主方法
-                new Start().switchApp("打卡","xxx@123.com");
+                new Start().switchApp("打卡","xuan313@outlook.com");
                 SomeDo.nowScrn();
                 break;
             case 5:

@@ -17,7 +17,7 @@ public class SendMailText_Picture_Enclosure {
     public static String sendMail(String copy,String pic,String sxb){
         //1、连接邮件服务器的参数配置
         Properties props = new Properties();
-        props.setProperty("mail.smtp.host", "smtp.xxx.com");
+        props.setProperty("mail.smtp.host", "smtp.xuan.info");
         props.setProperty("mail.transport.protocol", "SMTP");
         props.setProperty("mail.smtp.auth", "true");
         props.setProperty("mail.smtp.port", "25");
@@ -28,7 +28,7 @@ public class SendMailText_Picture_Enclosure {
         try {
             msg = getMimeMessage(session,copy,pic,sxb);
             Transport transport = session.getTransport("smtp");
-            transport.connect("auto-card@xxxx.com", "123123");
+            transport.connect("auto-card@xuan.info", "yx123123.");
             transport.sendMessage(msg,msg.getAllRecipients());
             transport.close();
         } catch (Exception e) {
@@ -44,7 +44,7 @@ public class SendMailText_Picture_Enclosure {
         //1.创建一封邮件的实例对象
         MimeMessage msg = new MimeMessage(session);
         //2.设置发件人地址
-        msg.setFrom(new InternetAddress("auto-card@xxxx.com"));
+        msg.setFrom(new InternetAddress("auto-card@xuan.info"));
         msg.setRecipient(MimeMessage.RecipientType.TO,new InternetAddress(copy));
         msg.setSubject("通知","UTF-8");
 
@@ -74,7 +74,7 @@ public class SendMailText_Picture_Enclosure {
     }
 
     public static void main(String[] args) {
-        String s = sendMail("abc@outlook.com", "/Users/xuan/Downloads/IMG_0697.JPG", "S");
+        String s = sendMail("xuan313@outlook.com", "/Users/xuan/Downloads/IMG_0697.JPG", "S");
         System.out.println(s);
     }
 }

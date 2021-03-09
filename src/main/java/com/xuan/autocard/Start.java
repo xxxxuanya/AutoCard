@@ -121,7 +121,7 @@ public class Start {
         String runTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);
         logger.info("计划执行时间:" + runTime);
         try {
-            Thread.sleep(Long.parseLong(runTime));
+            Thread.sleep(rml);
         } catch (InterruptedException e) {
             logger.error("随机暂停执行失败,继续执行...");
         }
@@ -200,7 +200,7 @@ public class Start {
                     }
 
                     if(isWhat.equals("下班打卡")){
-                        Runtime.getRuntime().exec("adb shell input tap 520 1367");
+                        Runtime.getRuntime().exec("adb shell input tap 520 1245");
                         logger.info("[click]:尝试点击下班打卡");
                     }
 

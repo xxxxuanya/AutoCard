@@ -18,7 +18,12 @@ public class AutocardApplication {
 
         SpringApplication.run(AutocardApplication.class, args);
         ConnWebSocket c = new ConnWebSocket();
-        c.run();
+        try {
+            c.run();
+        }catch ( Exception e){
+            System.out.println("socket服务器初始化连接异常" + e.getMessage());
+            System.out.println("socket已禁用");
+        }
         System.out.println("");
         System.out.println("");
         System.out.println("");

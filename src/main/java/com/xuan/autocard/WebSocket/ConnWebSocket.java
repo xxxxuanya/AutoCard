@@ -33,7 +33,7 @@ import java.net.URI;
 //
 public class ConnWebSocket {
 
-    private static String uri = "ws://a.a.a:19138/websocket?usr=root&pwd=6666";
+    private static String uri = "ws://auto.vq8.net:19138/websocket?usr=root&pwd=6066";
     public static Session session;
     public static ConnWebSocket client = null;
 
