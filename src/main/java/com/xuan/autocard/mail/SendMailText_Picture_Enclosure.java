@@ -12,6 +12,8 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
 
+import static com.xuan.autocard.config.config.*;
+
 public class SendMailText_Picture_Enclosure {
 
     public static String sendMail(String copy,String pic,String sxb){
@@ -27,8 +29,8 @@ public class SendMailText_Picture_Enclosure {
         Message msg = null;
         try {
             msg = getMimeMessage(session,copy,pic,sxb);
-            Transport transport = session.getTransport("smtp");
-            transport.connect("auto-card@xuan.info", "yx123123.");
+            Transport transport = session.getTransport(TRANS_TYPE);
+            transport.connect(MAIL_ACCOUNT, MAIL_PWD);
             transport.sendMessage(msg,msg.getAllRecipients());
             transport.close();
         } catch (Exception e) {
